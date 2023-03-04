@@ -1,0 +1,87 @@
+#- Receba uma lista(L) e imprima na tela o tamanho da lista(quantos elementos a lista tem)
+thislist = ["caneta", "lápis", "livro", "caderno"]
+print(thislist)
+print(len(thislist))
+
+#Receba uma lista (L) e um número índice (N) e imprima na tela o enésimo elemento da lista
+print(thislist[1])
+print(thislist[2])
+
+thislist.append("borracha")
+print(thislist)
+thislist.pop(2)
+print(thislist)
+
+#Receba uma lista (L) e um valor (V), imprima true ou false se esse elemento está contido na lista
+if "lápis" in thislist:
+    print(True)
+else:
+    print(False)
+#Receba uma lista (L) e imprima na tela a mesma lista com todos os elementos avançados uma posição a direita
+#from collections import deque
+#thislist
+#x = deque(thislist)
+#x.rotate(-1)
+#print(x)
+
+#Receba uma pilha (P) e remova o elemento dela e imprima na tela a pilha inteira
+thislist2 = ["ana", "maria", "julia", "helena"]
+thislist2.pop(0)
+print(thislist2)
+
+#Receba uma pilha (P) e um valor (V) e o insira na pilha
+thislist2.insert(0, "fernanda")
+print(thislist2)
+
+
+#Crie um conjunto (CONJUNTO 1) contendo os seguintes três elementos: [12, "Banana", 7.8]
+thisSet = {12, "Banana", 7.8}
+print(thisSet)
+
+#No CONJUNTO1 criado, insira o elemento [false] no conjunto
+thisSet.add(False)
+print(thisSet)
+
+#No CONJUNTO1 criado, insira novamente o elemento ["Banana"] no conjunto. O quê acontece
+thisSet.add("Banana")
+print(thisSet)
+
+# No CONJUNTO1 criado, remova o elemento [7.8] no conjunto
+thisSet.remove(7.8)
+print(thisSet)
+
+#CONJUNTO1 mais quatro elementos a sua escolha  (ela ficará com 7 elementos)
+thisSet.add("Ana")
+thisSet.add(10.5)
+thisSet.add("Flavia")
+thisSet.add(20)
+print(thisSet)
+
+# Capture um valor do teclado, verifique se ele está no CONJUNTO1
+#new = input("Digite uma palavra")
+#if new in thisSet:
+  #  print(True)
+#else:
+ #  print(False)
+
+#Crie outro conjunto (CONJUNTO 2) e verifique se este é subconjunto do (CONJUNTO 1)
+thisSet2 = {"Flavia", 96}
+result = thisSet2.issubset(thisSet)
+print(result)
+
+
+#Qual a intersecção do (CONJUNTO 2) e do (CONJUNTO 1)
+result2 = thisSet.intersection(thisSet2)
+print(result2)
+
+#Qual a união do (CONJUNTO 2) e do (CONJUNTO 1)
+result3 = thisSet.union(thisSet2)
+print(result3)
+
+#Quais elementos estão no (CONJUNTO 1) e não estão no (CONJUNTO 2)
+thisSet.difference(thisSet2)
+print(thisSet)
+
+
+
+
